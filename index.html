@@ -1,0 +1,61 @@
+<html>
+    <body>
+        <div>
+            <h1 class="title">Can i court u?</h1>
+            <img src="https://media1.tenor.com/images/24ac4dadc09cc131dfb30abc71d4350f/tenor.gif?itemid=9648453" alt="">
+            </Br></Br>
+            <div class="buttons">
+            <button class="btn YES" id="Yesbt">Yes</button>
+            <button class="btn NO" id="no">No</button>
+        </div>
+    </div>
+    <style>
+        .title {
+         font-size: 3.6rem;
+         color: blue;
+         text-align: center;
+         margin-bottom: 2rem;
+         font-family: "Protest Riot", sans-serif;
+        }
+        .btn {
+         padding: 1.5rem 2.5rem;
+         border: none;
+         border-radius: 50px;
+         margin-left: 5%;
+        
+         color: white;
+         font-size: 1.6rem;
+         font-weight: 600;
+         cursor: pointer;
+         display: inline-block;
+         }
+        .YES{
+            background-color: green;
+        }
+        .NO{
+            background-color: red; 
+        }
+        div{
+            text-align: center;
+            vertical-align: middle;
+        }
+        #no{
+            position: absolute;
+        }
+    </style>
+    <script>
+        document.getElementById("Yesbt").addEventListener("click", function(){
+            alert("Hi bububear ko");
+        });
+            var b = document.getElementById("no")
+            b.addEventListener("click",change);
+            function change()   {
+
+                var i = Math.floor(Math.random()*1000)+1;
+                var j = Math.floor(Math.random()*700)+1;
+                b.style.left = i+"px";
+                b.style.top = j+"px";
+            }
+    </script>
+    </body>
+</html>
